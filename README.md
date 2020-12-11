@@ -30,11 +30,25 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+React JS is a user interface component library, which is a library used to build out user interfaces. React JS solves the issue of scalability. The components are reusable, so it helps with cleaner, faster code. What is also important is that it is:
+  1. Declaraive: easy to create interactive user interfaces
+  2. Component-Based: encapsulated components that manage own state
+  3. Learn Once, write anywhere: develop new features without rewriting existing code. 
+
 1. Describe component state.
+
+Components are d.r.y, reusable code that can stand alone. State is the current condition that the component is set in like either "on" or "off".
 
 1. Describe props.
 
+Props are properties that you want the child components to inherit: 
+  1. passed in render()
+  2. destructured in const
+  3. used in code
+
 1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+
+Side effects are anything that affects something outside the scope of the function being executed. This could be fetching data from API, timers, logging, manually manipulating the DOM. Pure components are not "good" and the read are "bad". The only reason they could be "bad" is that they could cause memory leakage if not handled properly. We use useEffect hook to prevent infinite looks and schedule when you want it to run. 
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
